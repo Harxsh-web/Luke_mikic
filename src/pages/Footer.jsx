@@ -22,7 +22,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-white text-gray-800 pt-16 pb-8">
+    <footer className="bg-white text-gray-800 pt-16 pb-8 border-t border-gray-200 mx-6">
       <div className="container mx-auto px-4 max-w-6xl text-left">
         <div className="mb-10">
           <div className="flex flex-col items-start mb-6">

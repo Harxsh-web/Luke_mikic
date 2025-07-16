@@ -49,7 +49,7 @@ export const Navbar = () => {
         scrolled ? "shadow-sm py-3" : "py-5"
       }`}
     >
-      <div className="container mx-auto px-4 max-w-6xl md:pt-5">
+      <div className="container mx-auto px-4 max-w-6xl ">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div

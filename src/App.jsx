@@ -9,6 +9,7 @@ import QuestionSection from './pages/QuestionSection'
 import YoutubeFrameworkSection from './pages/YoutubeFrameworkSection'
 import GuaranteeSection from './pages/GuaranteeSection'
 import Footer from './pages/Footer'
+import { IntroSection } from './pages/IntroSection'
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
      <Navbar/>
      <LandingSection/>
     <About/>
+    <IntroSection/>
     <Testimonial/>
     <BonusSection/>
     <GuaranteeSection/>

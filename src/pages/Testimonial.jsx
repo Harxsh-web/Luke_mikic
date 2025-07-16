@@ -303,7 +303,7 @@ function Testimonial() {
                   
                   {/* Dynamic Stats Section */}
                   {testimonial.stats && testimonial.stats.length > 0 && (
-                    <div className='flex flex-col md:flex-row gap-4 justify-center mt-6 text-lg font-semibold w-full'>
+                    <div className='flex flex-col md:flex-row gap-8 justify-center mt-6 text-lg font-semibold w-full'>
                       {testimonial.stats.map((stat, statIndex) => (
                         <div 
                           key={statIndex} 

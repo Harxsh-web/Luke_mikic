@@ -1,5 +1,5 @@
 import React from "react";
-
+import main from '../assets/Luke.webp'
 export default function LandingSection() {
   return (
     <section
@@ -27,15 +27,15 @@ export default function LandingSection() {
           </h1>
 
           {/* Image container */}
-          <div className="relative flex justify-center w-full mb-8">
+          <div className="relative flex justify-center w-full mb-8 ">
             {/* Capsule shape with yellow background - slight offset for visual interest */}
-            <div className="absolute w-full h-full bg-yellow-300 rounded-[100px] max-w-md transform translate-x-4 translate-y-4"></div>
+            <div className="absolute w-full h-full bg-yellow-300 rounded-full max-w-md transform translate-x-4 translate-y-4"></div>
             {/* Image container */}
             <div className="relative z-10 w-full max-w-md">
-              <div className="aspect-[1.6/1] rounded-[100px] overflow-hidden">
+              <div className=" rounded-full overflow-hidden">
                 <img
                   src={
-                    "https://upload.wikimedia.org/wikipedia/commons/c/ca/Machu_Picchu%2C_Peru_%282018%29.jpg"
+                    main
                   }
                   alt="Luke Mikic"
                   className="w-full h-full object-cover"
