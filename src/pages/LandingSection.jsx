@@ -1,5 +1,5 @@
 import React from "react";
-import LukeImage from '../assets/image/luke.webp';
+import LukeImage from '../assets/image/luke.jpg';
 
 export default function LandingSection() {
   return (
