@@ -1,7 +1,7 @@
 
 import { TbHeartHandshake } from "react-icons/tb";
 import React, { useRef, useState, useEffect } from 'react'
-import main from '../assets/image/luke.webp'
+import LukeImage from '../assets/image/luke.webp';
 import videoFile from '../assets/video/YouTube_LandingPage_1.webm'
 export const About = () => {
     const videoRef = useRef(null);
@@ -115,7 +115,7 @@ export const About = () => {
                             {/* Author image */}
                             <div className="relative z-10 overflow-hidden rounded-full aspect-square">
                                 <img
-                                    src={main}
+                                    src={LukeImage}
                                     alt="Luke Mikic"
                                     className="w-full h-full object-cover rounded-full"
                                 />

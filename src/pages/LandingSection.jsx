@@ -1,5 +1,5 @@
 import React from "react";
-import main from '../assets/image/luke.webp'
+import LukeImage from '../assets/image/luke.webp';
 
 export default function LandingSection() {
   return (
@@ -36,7 +36,7 @@ export default function LandingSection() {
               <div className=" rounded-full overflow-hidden">
                 <img
                   src={
-                    main
+                    LukeImage
                   }
                   alt="Luke Mikic"
                   className="w-full h-full object-cover"
