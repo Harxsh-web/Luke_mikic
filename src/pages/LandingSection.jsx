@@ -1,5 +1,5 @@
 import React from "react";
-import main from '../assets/Luke.webp'
+import main from '../assets/luke.webp'
 export default function LandingSection() {
   return (
     <section
