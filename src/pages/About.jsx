@@ -1,7 +1,7 @@
 
 import { TbHeartHandshake } from "react-icons/tb";
 import React, { useRef, useState, useEffect } from 'react'
-import main from '../assets/Luke.webp'
+import main from '../assets/luke.webp'
 import videoFile from '../assets/video/YouTube_LandingPage_1.webm'
 export const About = () => {
     const videoRef = useRef(null);
