@@ -3,6 +3,147 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Elza Font Faces */
+@font-face {
+  font-family: 'Elza';
+  src: url('./assets/fonts/Elza/Elza/ElzaTrial-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elza';
+  src: url('./assets/fonts/Elza/Elza/ElzaTrial-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elza';
+  src: url('./assets/fonts/Elza/Elza/ElzaTrial-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elza';
+  src: url('./assets/fonts/Elza/Elza/ElzaTrial-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elza';
+  src: url('./assets/fonts/Elza/Elza/ElzaTrial-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Elza Text Font Faces */
+@font-face {
+  font-family: 'Elza Text';
+  src: url('./assets/fonts/Elza/Elza Text/ElzaTextTrial-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elza Text';
+  src: url('./assets/fonts/Elza/Elza Text/ElzaTextTrial-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elza Text';
+  src: url('./assets/fonts/Elza/Elza Text/ElzaTextTrial-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elza Text';
+  src: url('./assets/fonts/Elza/Elza Text/ElzaTextTrial-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Recoleta Font Faces for Headings */
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/relocotta/fonnts.com-recoleta-light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/relocotta/fonnts.com-recoleta-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/relocotta/fonnts.com-recoleta-medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/relocotta/fonnts.com-recoleta-semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/relocotta/fonnts.com-recoleta-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/relocotta/fonnts.com-recoleta-black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Fallback font for symbols missing in Elza */
+@font-face {
+  font-family: 'Elza';
+  src: local('Inter'), local('Segoe UI'), local('Arial');
+  unicode-range: U+0027, U+0023, U+002B, U+0021-U+002F, U+003A-U+0040, U+005B-U+0060, U+007B-U+007E;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elza';
+  src: local('Inter'), local('Segoe UI'), local('Arial');
+  unicode-range: U+0027, U+0023, U+002B, U+0021-U+002F, U+003A-U+0040, U+005B-U+0060, U+007B-U+007E;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elza';
+  src: local('Inter'), local('Segoe UI'), local('Arial');
+  unicode-range: U+0027, U+0023, U+002B, U+0021-U+002F, U+003A-U+0040, U+005B-U+0060, U+007B-U+007E;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Elza';
+  src: local('Inter'), local('Segoe UI'), local('Arial');
+  unicode-range: U+0027, U+0023, U+002B, U+0021-U+002F, U+003A-U+0040, U+005B-U+0060, U+007B-U+007E;
+  font-weight: 700;
+  font-style: normal;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -116,6 +257,41 @@
   }
   body {
     @apply bg-background text-foreground;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Elza', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* Apply Recoleta font to all headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Recoleta', 'Georgia', 'Times New Roman', serif;
+  }
+  
+  /* Fallback font for missing symbols in Elza */
+  .symbol-fallback {
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+    font-feature-settings: normal;
+  }
+  
+  /* Specific handling for common missing symbols */
+  .elza-text {
+    font-family: 'Elza', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* Utility classes for different symbol scenarios */
+  .text-with-symbols {
+    font-family: 'Elza', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* Force system font for specific symbols */
+  .force-system-symbols {
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* Mixed content - Elza for letters, system for symbols */
+  .mixed-font-content {
+    font-family: 'Elza', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  .mixed-font-content .symbol {
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   }
 }

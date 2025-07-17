@@ -10,7 +10,7 @@ export default function LandingSection() {
       <div className="max-w-7xl mx-auto">
         {/* Hero section */}
         <div className="max-w-4xl mx-auto text-center ">
-          <h1 className="text-5xl md:text-6xl font-sans font-bold mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Join The 9–5 Escape Artist
             <div className="relative inline-block">
               Academy

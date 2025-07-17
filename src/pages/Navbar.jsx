@@ -78,7 +78,7 @@ export const Navbar = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span className="font-bold text-2xl">Luke Mikic</span>
+            <h4 className="font-bold text-2xl">Luke Mikic</h4>
           </div>
 
           {/* Desktop Navigation */}
