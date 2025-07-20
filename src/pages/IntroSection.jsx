@@ -1,5 +1,5 @@
-import React from 'react'
-import img from '../assets/bg.png'
+
+import img from '../assets/image/lukeabout.png'
 export const IntroSection = () => {
   return (
     <>
@@ -17,7 +17,7 @@ export const IntroSection = () => {
             >
               <path
                 d="M5 15 C100 25, 300 0, 395 10"
-                stroke="#f87171"  // Tailwind's red-400
+                stroke="#f87171"  
                 strokeWidth="4"
                 fill="none"
               />
@@ -32,7 +32,7 @@ export const IntroSection = () => {
           <img
             src={img}
             alt="Background"
-            className='w-full h-auto rounded-lg shadow-md object-cover'
+            className='w-full h-auto rounded-lg  object-cover'
           />
         </div>
         <div className='flex-1 max-w-2xl'>

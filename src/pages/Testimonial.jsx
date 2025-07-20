@@ -27,6 +27,13 @@ function VideoPlayer({ name = "Testimonial", videoSrc }) {
       videoSrc.endsWith('.webp') ||
       videoSrc.startsWith('/uploads/'));
 
+  const isRegularVideo = videoSrc &&
+    (videoSrc.endsWith('.mp4') ||
+      videoSrc.endsWith('.webm') ||
+      videoSrc.endsWith('.ogg') ||
+      videoSrc.includes('cloudinary.com/') ||
+      videoSrc.includes('.mp4'));
+
   const getYouTubeId = (url) => {
     if (!url) return '';
     if (url.includes('youtu.be')) {
@@ -70,6 +77,21 @@ function VideoPlayer({ name = "Testimonial", videoSrc }) {
     );
   }
 
+  if (isRegularVideo) {
+    return (
+      <div className="bg-black relative w-full h-full aspect-video">
+        <video
+          src={videoSrc}
+          controls
+          className="w-full h-full"
+          preload="metadata"
+        >
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    );
+  }
+
   return null;
 }
 
@@ -95,7 +117,8 @@ const STATIC_TESTIMONIALS = [
     headline: "Brandon was about to give up on YouTube before working with us.",
     subheadline: "It took Brandon 379 videos, and 3 years to grow to 700 subscribers before working with us in September 2023...",
     imageUrl: test,
-    mediaType: "image",
+    videoUrl: "https://res.cloudinary.com/dgtxtdias/video/upload/v1753035152/Brandon_GreenCandle_Testimonial_pouxcd.mp4",
+    mediaType: "video",
     growthChartUrl: img,
     hasGrowthChart: true,
     // Dynamic stats configuration
@@ -192,6 +215,23 @@ const STATIC_TESTIMONIALS = [
       { value: "4th → 1st", label: "Niche ranking goal", bgColor: "bg-[#c8b3fc]" }
     ]
   },
+  {
+    id: 7,
+    name: "Simply Bitcoin",
+    title: "YouTube Creator",
+    quote: "Working with this team has completely transformed my YouTube channel. The results speak for themselves - from struggling with low views to consistently hitting thousands of views per video. The strategies they provided were game-changing.",
+    headline: "",
+    subheadline: "",
+    videoUrl: "https://res.cloudinary.com/dgtxtdias/video/upload/v1753035152/Brandon_GreenCandle_Testimonial_pouxcd.mp4",
+    mediaType: "video",
+    hasGrowthChart: false,
+    // Dynamic stats configuration
+    stats: [
+      { value: "6300%", label: "View increase", bgColor: "bg-[#FDD36B]" },
+      { value: "700 → 10k", label: "Subscriber growth", bgColor: "bg-[#FD976D]" },
+      { value: "18 months", label: "Transformation time", bgColor: "bg-[#c8b3fc]" }
+    ]
+  },
 ];
 
 // Static section data
@@ -215,7 +255,7 @@ function Testimonial() {
             <div key={testimonial.id} className="testimonial-item">
               <div className="text-center mb-8">
                 <h3 className="text-3xl md:text-5xl font-serif font-bold">
-                  {testimonial?.headline || "Brandon was about to give up on YouTube before working with us."}
+                  {testimonial?.headline || ""}
                 </h3>
                 <p className="text-lg mt-6 max-w-3xl mx-auto">
                   {testimonial?.subheadline}

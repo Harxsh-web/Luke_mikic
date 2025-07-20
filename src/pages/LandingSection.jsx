@@ -1,11 +1,10 @@
-import React from "react";
 import LukeImage from '../assets/image/luke.jpg';
 
 export default function LandingSection() {
   return (
     <section
       style={{ backgroundColor: "#F9F7F4" }}
-      className="py-20 md:py-30 px-4 md:px-8 mt-0 mb-0"
+      className="pt-20 pb-10  md:py-30 px-4 md:px-8 mt-0 mb-0"
     >
       <div className="max-w-7xl mx-auto">
         {/* Hero section */}
