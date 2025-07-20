@@ -1,0 +1,5 @@
+# Handle client-side routing
+/* /index.html 200
+
+# Ensure assets are served with correct MIME types
+/assets/* /assets/:splat 200
