@@ -27,7 +27,7 @@ export const IntroSection = () => {
 
       </div>
 
-      <div className='flex flex-col lg:flex-row items-center justify-center min-h-screen p-4 lg:p-8 gap-8 mt-5'>
+      <div className='flex flex-col md:flex-row items-center justify-center  p-4 lg:p-8 gap-8 mt-5'>
         <div className='flex-1 max-w-md lg:max-w-lg'>
           <img
             src={img}

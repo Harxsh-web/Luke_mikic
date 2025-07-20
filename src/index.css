@@ -74,6 +74,7 @@
   src: url('./assets/fonts/relocotta/fonnts.com-recoleta-light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -81,6 +82,7 @@
   src: url('./assets/fonts/relocotta/fonnts.com-recoleta-regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -88,6 +90,7 @@
   src: url('./assets/fonts/relocotta/fonnts.com-recoleta-medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -95,6 +98,7 @@
   src: url('./assets/fonts/relocotta/fonnts.com-recoleta-semibold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -102,6 +106,7 @@
   src: url('./assets/fonts/relocotta/fonnts.com-recoleta-bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -109,56 +114,10 @@
   src: url('./assets/fonts/relocotta/fonnts.com-recoleta-black.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
-/* Fallback font for symbols missing in Recoleta */
-@font-face {
-  font-family: 'Recoleta';
-  src: local('Inter'), local('Segoe UI'), local('Arial');
-  unicode-range: U+0021, U+0024, U+0025, U+0026, U+002D, U+0027, U+0023, U+002B, U+0028, U+0029, U+002A, U+002C, U+002E, U+002F, U+003A, U+003B, U+003C, U+003D, U+003E, U+003F, U+0040, U+005B, U+005C, U+005D, U+005E, U+005F, U+0060, U+007B, U+007C, U+007D, U+007E;
-  font-weight: 300;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Recoleta';
-  src: local('Inter'), local('Segoe UI'), local('Arial');
-  unicode-range: U+0021, U+0024, U+0025, U+0026, U+002D, U+0027, U+0023, U+002B, U+0028, U+0029, U+002A, U+002C, U+002E, U+002F, U+003A, U+003B, U+003C, U+003D, U+003E, U+003F, U+0040, U+005B, U+005C, U+005D, U+005E, U+005F, U+0060, U+007B, U+007C, U+007D, U+007E;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Recoleta';
-  src: local('Inter'), local('Segoe UI'), local('Arial');
-  unicode-range: U+0021, U+0024, U+0025, U+0026, U+002D, U+0027, U+0023, U+002B, U+0028, U+0029, U+002A, U+002C, U+002E, U+002F, U+003A, U+003B, U+003C, U+003D, U+003E, U+003F, U+0040, U+005B, U+005C, U+005D, U+005E, U+005F, U+0060, U+007B, U+007C, U+007D, U+007E;
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Recoleta';
-  src: local('Inter'), local('Segoe UI'), local('Arial');
-  unicode-range: U+0021, U+0024, U+0025, U+0026, U+002D, U+0027, U+0023, U+002B, U+0028, U+0029, U+002A, U+002C, U+002E, U+002F, U+003A, U+003B, U+003C, U+003D, U+003E, U+003F, U+0040, U+005B, U+005C, U+005D, U+005E, U+005F, U+0060, U+007B, U+007C, U+007D, U+007E;
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Recoleta';
-  src: local('Inter'), local('Segoe UI'), local('Arial');
-  unicode-range: U+0021, U+0024, U+0025, U+0026, U+002D, U+0027, U+0023, U+002B, U+0028, U+0029, U+002A, U+002C, U+002E, U+002F, U+003A, U+003B, U+003C, U+003D, U+003E, U+003F, U+0040, U+005B, U+005C, U+005D, U+005E, U+005F, U+0060, U+007B, U+007C, U+007D, U+007E;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Recoleta';
-  src: local('Inter'), local('Segoe UI'), local('Arial');
-  unicode-range: U+0021, U+0024, U+0025, U+0026, U+002D, U+0027, U+0023, U+002B, U+0028, U+0029, U+002A, U+002C, U+002E, U+002F, U+003A, U+003B, U+003C, U+003D, U+003E, U+003F, U+0040, U+005B, U+005C, U+005D, U+005E, U+005F, U+0060, U+007B, U+007C, U+007D, U+007E;
-  font-weight: 900;
-  font-style: normal;
-}
 /* Fallback font for symbols missing in Elza */
 @font-face {
   font-family: 'Elza';
@@ -312,7 +271,7 @@
   
   /* Apply Recoleta font to all headings */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Recoleta', 'Georgia', 'Times New Roman', serif;
+    font-family: 'Recoleta', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   }
   
   /* Fallback font for missing symbols in Elza */
@@ -363,4 +322,51 @@
   .mixed-recoleta-content .symbol {
     font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   }
+  
+  /* Mobile-specific font handling - force system fonts on mobile */
+  @media screen and (max-width: 768px) {
+    /* Use system fonts on mobile to ensure symbols display */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+      font-weight: bold;
+    }
+    
+    /* Specific symbol handling for mobile */
+    .mobile-symbol-fix {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+    }
+  }
+  
+  /* Touch device detection */
+  @media (pointer: coarse) {
+    h1, h2, h3, h4, h5, h6 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+      font-weight: bold;
+    }
+  }
+  
+  /* Utility class for problematic symbols */
+  .symbol-fallback-mobile {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+    display: inline;
+  }
+  
+  /* Enhanced mobile font loading */
+  @supports (-webkit-touch-callout: none) {
+    /* iOS Safari specific */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Recoleta', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+      -webkit-font-feature-settings: "kern" 1;
+      font-feature-settings: "kern" 1;
+    }
+  }
+  
+  /* Android Chrome specific */
+  @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Recoleta', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    }
+  }
+  
+
 }
