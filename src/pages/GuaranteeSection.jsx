@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function GuaranteeSection() {
   // Static default values
   const section = {
-    title: "Our 100% Satisfaction Guarantee & Money-Back Promise",
+    title: "Our 100% Satisfaction Guarantee & Money - Back Promise",
     subtitle: "We want the investment in me to be an absolute no-brainer for you – if you’re actually going to do the work 😉",
     content: `If for whatever reason you aren’t 100% happy with your experience, drop us an email and we’ll happily refund your entire payment.`,
     backgroundColor: "#F9F9F7"
