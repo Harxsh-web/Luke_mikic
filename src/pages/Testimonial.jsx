@@ -136,8 +136,8 @@ const STATIC_TESTIMONIALS = [
     headline: "Sean Was Able To Monetise His YouTube Channel Working With Us.",
     subheadline: " ",
     imageUrl: test2,
-    videoUrl: "/attached_assets/image_1746467734537.png",
-    mediaType: "image",
+    videoUrl: "https://res.cloudinary.com/dgtxtdias/video/upload/v1753035371/SimplyBitcoin_Nico_Testimonial._zuytbq.mp4",
+    mediaType: "video",
     hasGrowthChart: false,
     // Dynamic stats configuration
     stats: [
@@ -215,23 +215,23 @@ const STATIC_TESTIMONIALS = [
       { value: "4th → 1st", label: "Niche ranking goal", bgColor: "bg-[#c8b3fc]" }
     ]
   },
-  {
-    id: 7,
-    name: "Simply Bitcoin",
-    title: "YouTube Creator",
-    quote: "Working with this team has completely transformed my YouTube channel. The results speak for themselves - from struggling with low views to consistently hitting thousands of views per video. The strategies they provided were game-changing.",
-    headline: "",
-    subheadline: "",
-    videoUrl: "https://res.cloudinary.com/dgtxtdias/video/upload/v1753035152/Brandon_GreenCandle_Testimonial_pouxcd.mp4",
-    mediaType: "video",
-    hasGrowthChart: false,
-    // Dynamic stats configuration
-    stats: [
-      { value: "6300%", label: "View increase", bgColor: "bg-[#FDD36B]" },
-      { value: "700 → 10k", label: "Subscriber growth", bgColor: "bg-[#FD976D]" },
-      { value: "18 months", label: "Transformation time", bgColor: "bg-[#c8b3fc]" }
-    ]
-  },
+  // {
+  //   id: 7,
+  //   name: "Simply Bitcoin",
+  //   title: "YouTube Creator",
+  //   quote: "Working with this team has completely transformed my YouTube channel. The results speak for themselves - from struggling with low views to consistently hitting thousands of views per video. The strategies they provided were game-changing.",
+  //   headline: "",
+  //   subheadline: "",
+  //   videoUrl: "https://res.cloudinary.com/dgtxtdias/video/upload/v1753035152/Brandon_GreenCandle_Testimonial_pouxcd.mp4",
+  //   mediaType: "video",
+  //   hasGrowthChart: false,
+  //   // Dynamic stats configuration
+  //   stats: [
+  //     { value: "6300%", label: "View increase", bgColor: "bg-[#FDD36B]" },
+  //     { value: "700 → 10k", label: "Subscriber growth", bgColor: "bg-[#FD976D]" },
+  //     { value: "18 months", label: "Transformation time", bgColor: "bg-[#c8b3fc]" }
+  //   ]
+  // },
 ];
 
 // Static section data

@@ -19,7 +19,7 @@ export function useMobileFontFix() {
   const processTextWithSymbols = (text) => {
     if (!isMobile || !text) return text;
 
-    const problematicSymbols = ['$', '!', '%', '&', '-'];
+    const problematicSymbols = ['$', '!', '%', '&', '-', '(', ')', '*', '+', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '#', '"', "'"];
     let hasSymbols = false;
 
     for (let symbol of problematicSymbols) {
@@ -53,7 +53,7 @@ export function useMobileFontFix() {
           <span 
             key={index}
             style={{
-              fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, "Roboto", "Helvetica Neue", Arial, sans-serif'
+              fontFamily: '"Inter", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, "Helvetica Neue", Arial, sans-serif'
             }}
           >
             {segment}

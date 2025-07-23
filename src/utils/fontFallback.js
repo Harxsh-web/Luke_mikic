@@ -10,7 +10,7 @@ export function initMobileFontFallback() {
   if (!isMobile) return;
 
   // List of problematic symbols that might be missing from Recoleta
-  const problematicSymbols = ['$', '!', '%', '&', '-'];
+  const problematicSymbols = ['$', '!', '%', '&', '-', '(', ')', '*', '+', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '#', '"', "'"];
   
   // Function to wrap symbols with fallback font
   function wrapSymbolsWithFallback(element) {
@@ -32,8 +32,8 @@ export function initMobileFontFallback() {
         // Create a regex pattern for all problematic symbols
         const symbolPattern = new RegExp(`([${problematicSymbols.map(s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('')}])`, 'g');
         
-        // Replace symbols with spans that have fallback font
-        const newHTML = text.replace(symbolPattern, '<span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', system-ui, \'Roboto\', \'Helvetica Neue\', Arial, sans-serif !important;">$1</span>');
+        // Replace symbols with spans that have fallback font - using multiple font options
+        const newHTML = text.replace(symbolPattern, '<span style="font-family: \'Inter\', \'Roboto\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', system-ui, \'Helvetica Neue\', Arial, sans-serif !important;">$1</span>');
         
         if (newHTML !== text) {
           const wrapper = document.createElement('span');
@@ -100,15 +100,15 @@ export function addMobileFontCSS() {
   
   const style = document.createElement('style');
   style.textContent = `
-    /* Mobile-specific symbol handling */
+    /* Mobile-specific symbol handling with multiple font options */
     @media screen and (max-width: 768px) {
       h1, h2, h3, h4, h5, h6 {
-        font-family: 'Recoleta', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+        font-family: 'Recoleta', 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Helvetica Neue', Arial, sans-serif !important;
       }
       
-      /* Force system fonts for specific characters on mobile */
+      /* Force fallback fonts for specific characters on mobile */
       h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Helvetica Neue', Arial, sans-serif;
       }
     }
   `;

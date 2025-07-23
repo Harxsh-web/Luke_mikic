@@ -10,7 +10,7 @@ const MobileHeading = ({ children, className = '', as: Component = 'h1', ...prop
     if (!isMobile) return content;
 
     if (typeof content === 'string') {
-      const problematicSymbols = ['$', '!', '%', '&', '-', '–', '—'];
+      const problematicSymbols = ['$', '!', '%', '&', '-', '–', '—', '(', ')', '*', '+', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '#', '"', "'"];
       let hasSymbols = false;
 
       for (let symbol of problematicSymbols) {
@@ -27,7 +27,7 @@ const MobileHeading = ({ children, className = '', as: Component = 'h1', ...prop
       problematicSymbols.forEach(symbol => {
         const regex = new RegExp(`(\\${symbol.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'g');
         processedContent = processedContent.replace(regex, 
-          `<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Roboto', 'Helvetica Neue', Arial, sans-serif;">$1</span>`
+          `<span style="font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Helvetica Neue', Arial, sans-serif;">$1</span>`
         );
       });
 
