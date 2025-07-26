@@ -59,26 +59,7 @@ export const About = () => {
                     </div>
                 </div>
                 {/* Video Section */}
-                <div className="max-w-2xl mx-auto flex items-center justify-center text-center relative mt-10 px-6">
-                    <div className="relative w-full aspect-video bg-black rounded-lg overflow-hidden shadow-lg">
-                        {/* Vimeo embed with autoplay */}
-                        <video
-                            className="w-full h-full rounded-lg shadow-lg"
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            controls
-                        >
-                            <source
-                                src="https://res.cloudinary.com/dgtxtdias/video/upload/v1752769036/YouTube_LandingPage_1_ziqiog.webm"
-                                type="video/webm"
-                            />
-                            Your browser does not support the video tag.
-                        </video>
-
-                    </div>
-                </div>
+            
             </section>
 
         </>

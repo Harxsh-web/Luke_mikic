@@ -73,7 +73,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link to="/checkout" className="text-gray-600 hover:text-gray-900 transition flex items-center">
-                  <span className="font-medium text-[#F9966B]">Enrol Now for $995 </span>
+                  <span className="font-medium text-[#F9966B]">Join my skool for 0.90 cents a day </span>
                 </Link>
               </li>
               <li>

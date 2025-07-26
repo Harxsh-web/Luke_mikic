@@ -137,7 +137,7 @@ const STATIC_TESTIMONIALS = [
     subheadline: " ",
     imageUrl: test2,
     videoUrl: "https://res.cloudinary.com/dgtxtdias/video/upload/v1753035371/SimplyBitcoin_Nico_Testimonial._zuytbq.mp4",
-    mediaType: "video",
+    mediaType: "image",
     hasGrowthChart: false,
     // Dynamic stats configuration
     stats: [
@@ -215,23 +215,23 @@ const STATIC_TESTIMONIALS = [
       { value: "4th → 1st", label: "Niche ranking goal", bgColor: "bg-[#c8b3fc]" }
     ]
   },
-  // {
-  //   id: 7,
-  //   name: "Simply Bitcoin",
-  //   title: "YouTube Creator",
-  //   quote: "Working with this team has completely transformed my YouTube channel. The results speak for themselves - from struggling with low views to consistently hitting thousands of views per video. The strategies they provided were game-changing.",
-  //   headline: "",
-  //   subheadline: "",
-  //   videoUrl: "https://res.cloudinary.com/dgtxtdias/video/upload/v1753035152/Brandon_GreenCandle_Testimonial_pouxcd.mp4",
-  //   mediaType: "video",
-  //   hasGrowthChart: false,
-  //   // Dynamic stats configuration
-  //   stats: [
-  //     { value: "6300%", label: "View increase", bgColor: "bg-[#FDD36B]" },
-  //     { value: "700 → 10k", label: "Subscriber growth", bgColor: "bg-[#FD976D]" },
-  //     { value: "18 months", label: "Transformation time", bgColor: "bg-[#c8b3fc]" }
-  //   ]
-  // },
+  {
+    id: 7,
+    name: "Simply Bitcoin",
+    title: "YouTube Creator",
+    quote: "Discover the proven strategies and blueprints I’ve developed, that will allow you to quit your without 9-5 and succeed on YouTube.",
+    headline: "",
+    subheadline: "",
+    videoUrl: "https://res.cloudinary.com/dgtxtdias/video/upload/v1753035371/SimplyBitcoin_Nico_Testimonial._zuytbq.mp4",
+    mediaType: "video",
+    hasGrowthChart: false,
+    // Dynamic stats configuration
+    stats: [
+      { value: "6300%", label: "View increase", bgColor: "bg-[#FDD36B]" },
+      { value: "700 → 10k", label: "Subscriber growth", bgColor: "bg-[#FD976D]" },
+      { value: "18 months", label: "Transformation time", bgColor: "bg-[#c8b3fc]" }
+    ]
+  },
 ];
 
 // Static section data
@@ -371,7 +371,7 @@ function Testimonial() {
               rel="noopener noreferrer"
               className="bg-[#4fc6e0] hover:bg-black hover:text-white text-black px-10 py-3 rounded-full text-lg font-semibold shadow-md inline-block cursor-pointer transition-colors duration-300"
             >
-              Enrol Now For $995
+              Join my skool for 0.90 cents a day
             </a>
           </div>
         </div>

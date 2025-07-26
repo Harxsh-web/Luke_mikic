@@ -3,7 +3,7 @@ import img from '../assets/image/lukeabout.png'
 export const IntroSection = () => {
   return (
     <>
-      <div className='mt-10'>
+      <div className='mt-10 px-2'>
         <h2 className="text-4xl md:text-5xl font-medium text-center leading-snug text-[#1a1325]">
           A YouTube Channel can completely change <br />
           your life –{' '}

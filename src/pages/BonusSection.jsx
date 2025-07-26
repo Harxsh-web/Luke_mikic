@@ -71,7 +71,7 @@ const BonusSection = () => {
                             onClick={() => window.open("https://buy.stripe.com/8x200ibyab4W10v4lIgEg00", "_blank")}
                             className="bg-[#4fc6e0] hover:bg-black hover:text-white text-black px-10 py-8 rounded-full text-lg font-semibold shadow-md cursor-pointer"
                         >
-                            Enrol Now For $995
+                            Join my skool for 0.90 cents a day
                         </Button>
                     </div>
                 </div>
