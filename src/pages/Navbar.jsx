@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "wouter";
+import { useLocation } from "react-router-dom";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "../assets/image/luke.jpg"
@@ -8,11 +8,11 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isSheetOpen, setIsSheetOpen] = useState(false);
-  const [location] = useLocation();
+  const location = useLocation();
 
   const scrollToSection = (sectionId, event) => {
     if (event) event.preventDefault();
-    if (location !== "/") {
+    if (location.pathname !== "/") {
       window.location.href = `/#${sectionId}`;
       return;
     }
@@ -52,7 +52,7 @@ export const Navbar = () => {
           <div
             className="flex items-center cursor-pointer gap-2"
             onClick={() => {
-              if (location === "/") {
+              if (location.pathname === "/") {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               } else {
                 window.location.href = "/";
@@ -102,7 +102,7 @@ export const Navbar = () => {
                       onClick={() => {
                         setIsSheetOpen(false);
                         setTimeout(() => {
-                          if (location === "/") {
+                          if (location.pathname === "/") {
                             window.scrollTo({ top: 0, behavior: "smooth" });
                           } else {
                             window.location.href = "/";

@@ -10,23 +10,33 @@ import YoutubeFrameworkSection from './pages/YoutubeFrameworkSection'
 import GuaranteeSection from './pages/GuaranteeSection'
 import Footer from './pages/Footer'
 import { IntroSection } from './pages/IntroSection'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Schedule } from './pages/Schedule'
+
 
 function App() {
  
 
   return (
-    <>
-     <Navbar/>
-     <LandingSection/>
-    <About/>
-    <IntroSection/>
-    <Testimonial/>
-    <BonusSection/>
-    <GuaranteeSection/>
-    <YoutubeFrameworkSection/>
-    <QuestionSection/>
-    <Footer/>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Navbar/>
+            <LandingSection/>
+            <About/>
+            <IntroSection/>
+            <Testimonial/>
+            <BonusSection/>
+            <GuaranteeSection/>
+            <YoutubeFrameworkSection/>
+            <QuestionSection/>
+            <Footer/>
+          </>
+        } />
+        <Route path="/schedule" element={<Schedule />} />
+      </Routes>
+    </Router>
   )
 }
 
