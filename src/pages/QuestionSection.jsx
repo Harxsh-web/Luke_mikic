@@ -37,21 +37,28 @@ const QuestionSection = ({ questionsSection = {} }) => {
         </div>
 
       </section>
-      <section id="book-section" class="py-20 bg-gray-100 text-center">
-        <h2 class="text-3xl font-bold mb-4">Book Your Discovery Call with Luke Now</h2>
-        <p class="mb-6">
-          Click below to book your session.
-        </p>
-        <a href="stripe-payment-link">
-          <Button
-            onClick={() => window.open("https://buy.stripe.com/8x200ibyab4W10v4lIgEg00", "_blank")}
-            className="bg-[#4fc6e0] hover:bg-black hover:text-white text-black px-10 py-8 rounded-full text-lg font-semibold shadow-md cursor-pointer"
-          >
-            Book Now
-            {/* <ArrowRightIcon className="ml-2 h-6 w-6" /> */}
-          </Button>
-        </a>
-      </section>
+   <section
+  id="book-section"
+  className="py-24 bg-gray-100 text-center flex flex-col items-center justify-center"
+>
+  <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900">
+    Book Your Discovery Call with Luke Now
+  </h2>
+  <p className="text-lg md:text-xl mb-8 text-gray-700 max-w-xl">
+    Click below to book your session and secure your spot with Luke.
+  </p>
+  <a
+    href="https://buy.stripe.com/6oUeVc6dQ1umgZt4lIgEg03"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-[#4fc6e0] hover:bg-black hover:text-white text-black px-12 py-4 md:px-16 md:py-6 rounded-full text-lg md:text-xl font-semibold shadow-lg transition duration-300 ease-in-out flex items-center justify-center"
+  >
+    Book Now
+    {/* Uncomment if you want an icon */}
+    {/* <ArrowRightIcon className="ml-2 h-6 w-6" /> */}
+  </a>
+</section>
+
     </>
   );
 };
