@@ -51,14 +51,13 @@ const BonusSection = () => {
 
                                 {item.buttonText && item.buttonUrl && (
                                     <div className="flex justify-end">
-                                        <Button
-                                            variant="secondary"
-                                            className="group bg-transparent hover:bg-transparent  px-6 py-3 rounded-full flex items-center transition-colors"
+                                        <div
+                                            className="group bg-transparent hover:bg-transparent  px-6 py-3 rounded-full flex items-center transition-colors cursor-pointer"
                                             onClick={() => window.open(item.buttonUrl, '_blank')}
                                         >
                                             {item.buttonText}
                                             <ArrowRightIcon className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                                        </Button>
+                                        </div>
                                     </div>
                                 )}
                             </CardContent>

@@ -72,9 +72,9 @@ export default function Footer() {
             <h3 className="font-semibold text-gray-800 mb-4">Products</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/checkout" className="text-gray-600 hover:text-gray-900 transition flex items-center">
+                <a href="https://www.skool.com/digital-soveriegnity-academy-6579/about" target="_blank" className="text-gray-600 hover:text-gray-900 transition flex items-center">
                   <span className="font-medium text-[#F9966B]">Join my Skool for $1.63 / day</span>
-                </Link>
+                </a>
               </li>
               <li>
                 <a 

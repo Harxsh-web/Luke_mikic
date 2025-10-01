@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail } from 'lucide-react';
+import { ArrowRightIcon, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 const QuestionSection = ({ questionsSection = {} }) => {
   const {
@@ -48,6 +48,7 @@ const QuestionSection = ({ questionsSection = {} }) => {
             className="bg-[#4fc6e0] hover:bg-black hover:text-white text-black px-10 py-8 rounded-full text-lg font-semibold shadow-md cursor-pointer"
           >
             Book Now
+            {/* <ArrowRightIcon className="ml-2 h-6 w-6" /> */}
           </Button>
         </a>
       </section>
