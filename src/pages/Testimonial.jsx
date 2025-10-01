@@ -366,12 +366,12 @@ function Testimonial() {
           
           <div className="mt-16 text-center">
             <a
-              href="https://buy.stripe.com/8x200ibyab4W10v4lIgEg00"
+              href="https://www.skool.com/digital-soveriegnity-academy-6579/about0"
               target='_blank'
               rel="noopener noreferrer"
               className="bg-[#4fc6e0] hover:bg-black hover:text-white text-black px-10 py-3 rounded-full text-lg font-semibold shadow-md inline-block cursor-pointer transition-colors duration-300"
             >
-              Join my skool for 0.90 cents a day
+              Join my Skool for $1.63 / day
             </a>
           </div>
         </div>

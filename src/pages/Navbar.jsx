@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "wouter";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button"; // shadcn ui button
-import { HiOutlineDocument, HiOutlineBookOpen, HiOutlineVideoCamera } from "react-icons/hi";
-import { BiPodcast } from "react-icons/bi";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsLightningCharge, BsYoutube, BsBook, BsLaptop, BsTools } from "react-icons/bs";
+import { useLocation } from "wouter";
+import { Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import logo from "../assets/image/luke.jpg"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 export const Navbar = () => {
@@ -41,19 +38,19 @@ export const Navbar = () => {
     { id: "author-section", label: "About" },
     { id: "testimonials", label: "Testimonials" },
     { id: "bonus-section", label: "Bonuses" },
+    
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white  ${
-        scrolled ? "shadow-sm py-3" : "py-5"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white  ${scrolled ? "shadow-sm py-3" : "py-5"
+        }`}
     >
       <div className="container mx-auto px-4 max-w-6xl ">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center ">
           {/* Logo */}
           <div
-            className="flex items-center cursor-pointer"
+            className="flex items-center cursor-pointer gap-2"
             onClick={() => {
               if (location === "/") {
                 window.scrollTo({ top: 0, behavior: "smooth" });
@@ -62,22 +59,11 @@ export const Navbar = () => {
               }
             }}
           >
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mr-2"
-            >
-              <path
-                d="M8.5 32.5L27.5 8M20 8L32 27.5M8.5 14.5L14 8"
-                stroke="#38BDF8"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <img
+              src={logo}
+              alt="logo"
+              className="h-10 w-10 object-contain rounded-full"
+            />
             <h4 className="font-bold text-2xl">Luke Mikic</h4>
           </div>
 
@@ -92,15 +78,12 @@ export const Navbar = () => {
                 {section.label}
               </button>
             ))}
-            <a
-              href="https://youtube.com/@lukemikic21?si=9MqveJLGr8HNhApV"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Button
+              onClick={(e) => scrollToSection("book-section", e)}
+              className="rounded-full bg-cyan-400 hover:bg-cyan-500 text-white"
             >
-              <Button className="rounded-full bg-cyan-400 hover:bg-cyan-500 text-white">
-                Join 15k+ Subscribers
-              </Button>
-            </a>
+              Apply Now
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -160,16 +143,15 @@ export const Navbar = () => {
                       {section.label}
                     </button>
                   ))}
-                  <a
-                    href="https://youtube.com/@lukemikic21?si=9MqveJLGr8HNhApV"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setIsSheetOpen(false)}
+                  <Button
+                    onClick={(e) => {
+                      setIsSheetOpen(false);
+                      setTimeout(() => scrollToSection("book-section", e), 300);
+                    }}
+                    className="w-full rounded-full bg-cyan-400 hover:bg-cyan-500 text-white"
                   >
-                    <Button className="w-full rounded-full bg-cyan-400 hover:bg-cyan-500 text-white">
-                      Join 15k+ Subscribers
-                    </Button>
-                  </a>
+                    Apply Now
+                  </Button>
                 </div>
               </SheetContent>
             </Sheet>

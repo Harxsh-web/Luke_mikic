@@ -75,11 +75,11 @@ export default function LandingSection() {
               className="bg-[#FF9B76] hover:bg-[#FF855A] text-black font-medium 
               rounded-full px-6 md:px-8 py-2 md:py-4 h-auto text-md md:text-lg w-50 
                md:w-auto flex items-center justify-center "
-              href="https://buy.stripe.com/8x200ibyab4W10v4lIgEg00"
+              href="https://www.skool.com/digital-soveriegnity-academy-6579/about"
               target="_blank"
               style={{ textDecoration: "none" }}
             >
-              Join my skool for 0.90 cents a day
+              Join my Skool for $1.63 / day
             </a>
 
             <a

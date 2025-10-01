@@ -24,8 +24,8 @@ const YoutubeFrameworkSection = () => {
     }
   ];
   const finalNote = `That's all it takes. I personally guarantee that if you follow this 3-part formula, your life will change in ways you can't imagine. You'll learn incredibly useful skills, you'll make friends with amazing people from all over the world and you'll start to generate 'passive' income. You might even get messages from people about how your videos have changed their lives. 😊 It seems simple in theory, but the execution is slightly more difficult.`;
-  const buttonText = "Join my skool for 0.90 cents a day";
-  const buttonUrl = "https://buy.stripe.com/8x200ibyab4W10v4lIgEg00";
+  const buttonText = "Join my Skool for $1.63 / day";
+  const buttonUrl = "https://www.skool.com/digital-soveriegnity-academy-6579/about";
   const backgroundColor = "bg-gray-50";
 
   return (

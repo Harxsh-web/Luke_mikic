@@ -11,7 +11,7 @@ const BonusSection = () => {
             title: 'Access to my Skool Community!',
             description: 'If you can’t afford the $995, I’m offering you a free 5 minute call with me to ask me any clarifying question that might help you decide whether the decision is worth it for you. ',
             buttonText: 'Join Now',
-            buttonUrl: 'https://buy.stripe.com/8x200ibyab4W10v4lIgEg00',
+            buttonUrl: 'https://www.skool.com/digital-soveriegnity-academy-6579/about',
             backgroundColor: '#FFE382'
         },
     ];
@@ -68,10 +68,10 @@ const BonusSection = () => {
                     <div className="mt-5 md:mt-12 text-center">
                      
                         <Button
-                            onClick={() => window.open("https://buy.stripe.com/8x200ibyab4W10v4lIgEg00", "_blank")}
+                            onClick={() => window.open("https://www.skool.com/digital-soveriegnity-academy-6579/about", "_blank")}
                             className="bg-[#4fc6e0] hover:bg-black hover:text-white text-black px-10 py-8 rounded-full text-lg font-semibold shadow-md cursor-pointer"
                         >
-                            Join my skool for 0.90 cents a day
+                            Join my Skool for $1.63 / day
                         </Button>
                     </div>
                 </div>
