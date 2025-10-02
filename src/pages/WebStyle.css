@@ -1,0 +1,98 @@
+.WebSiteStyle h1{
+font-size: 60px;
+}
+.WebSiteStyle h2{
+font-size: 40px;
+}
+.WebSiteStyle h3{
+font-size: 30px;
+}
+.WebSiteStyle h4{
+  font-size: 28px;
+}
+.WebSiteStyle h5{
+font-size: 24px;
+}
+.WebSiteStyle h6{
+font-size: 20px;
+}
+.WebSiteStyle span{
+  font-size: 16px;
+}
+.WebSiteStyle p{
+  font-size: 16px;
+}
+ 
+@media(max-width:1024px){
+ .WebSiteStyle  h1{
+font-size: 40px;
+}
+.WebSiteStyle  h2{
+font-size: 38px;
+line-height: 48px;
+}
+.WebSiteStyle h3{
+font-size: 28px;
+}
+.WebSiteStyle h4{
+  font-size: 24px;
+}
+.WebSiteStyle h5{
+font-size: 20px;
+}
+.WebSiteStyle h6{
+font-size: 16px;
+}
+ 
+.WebSiteStyle p{
+  font-size: 14px;
+}
+.WebSiteStyle span{
+  font-size: 14px;
+}
+.WebSiteStyle ul{
+   font-size: 14px;
+}
+.WebSiteStyle a{
+   font-size: 14px;
+}
+.WebSiteStyle button{
+  font-size: 14px;
+}
+}
+@media(max-width:567px){
+.WebSiteStyle   h1{
+font-size: 30px;
+}
+.WebSiteStyle h2{
+font-size: 28px;
+}
+.WebSiteStyle h3{
+font-size: 24px;
+}
+.WebSiteStyle h4{
+  font-size: 20px;
+}
+.WebSiteStyle h5{
+font-size: 18px;
+}
+.WebSiteStyle h6{
+font-size: 16px;
+}
+ 
+.WebSiteStyle p{
+  font-size: 14px;
+}
+.WebSiteStyle span{
+  font-size: 14px;
+}
+.WebSiteStyle ul{
+   font-size: 14px;
+}
+.WebSiteStyle a{
+   font-size: 14px;
+}
+.WebSiteStyle  button{
+  font-size: 14px;
+}
+}

@@ -11,7 +11,8 @@ import GuaranteeSection from './pages/GuaranteeSection'
 import Footer from './pages/Footer'
 import { IntroSection } from './pages/IntroSection'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Schedule } from './pages/Schedule'
+import Schedule from './pages/Schedule'
+
 
 
 function App() {
