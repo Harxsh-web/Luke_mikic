@@ -1,6 +1,24 @@
 import LukeImage from '../assets/image/luke.jpg';
+import { Button } from "@/components/ui/button";
 
 export default function LandingSection() {
+  const scrollToSection = (sectionId, event) => {
+    if (event) event.preventDefault();
+    if (location.pathname !== "/") {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerHeight = document.querySelector("header")?.offsetHeight || 0;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <section
       style={{ backgroundColor: "#F9F7F4" }}
@@ -82,7 +100,7 @@ export default function LandingSection() {
               Join my Skool for $1.63 / day
             </a>
 
-            <a
+            {/* <a
               className="border-2 font-medium rounded-full px-6 md:px-8 py-2 md:py-4 h-auto text-sm md:text-lg w-50 md:w-auto flex items-center justify-center"
               href="https://www.youtube.com/@lukemikic21"
               target="_blank"
@@ -90,7 +108,15 @@ export default function LandingSection() {
               style={{ textDecoration: "none" }}
             >
               Join YouTube
-            </a>
+            </a> */}
+            <Button
+              onClick={(e) => scrollToSection("book-section", e)}
+              className="border-2 font-medium rounded-full px-6 md:px-8 py-2 md:py-4
+               h-auto text-sm md:text-lg w-50 md:w-auto flex items-center justify-center
+               cursor-pointer bg-white text-black border-gray-300 hover:bg-black hover:text-white transition-colors duration-300"
+            >
+              Apply Now
+            </Button>
           </div>
 
           {/* Animated down arrow */}
