@@ -19,25 +19,28 @@ function App() {
  
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Navbar/>
-            <LandingSection/>
-            <About/>
-            <IntroSection/>
-            <Testimonial/>
-            <BonusSection/>
-            <GuaranteeSection/>
-            <YoutubeFrameworkSection/>
-            <QuestionSection/>
-            <Footer/>
-          </>
-        } />
-        <Route path="/schedule" element={<Schedule />} />
-      </Routes>
-    </Router>
+    <div>
+      under development
+    </div>
+    // <Router>
+    //   <Routes>
+    //     <Route path="/" element={
+    //       <>
+    //         <Navbar/>
+    //         <LandingSection/>
+    //         <About/>
+    //         <IntroSection/>
+    //         <Testimonial/>
+    //         <BonusSection/>
+    //         <GuaranteeSection/>
+    //         <YoutubeFrameworkSection/>
+    //         <QuestionSection/>
+    //         <Footer/>
+    //       </>
+    //     } />
+    //     <Route path="/schedule" element={<Schedule />} />
+    //   </Routes>
+    // </Router>
   )
 }
 
